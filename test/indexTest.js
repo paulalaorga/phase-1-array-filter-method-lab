@@ -9,7 +9,7 @@ describe('index.js', function () {
 
       expect(findMatching(drivers, 'Bobby')).to.eql(['Bobby', 'Bobby']);
       expect(findMatching(drivers, 'Sammy')).to.eql(['Sammy']);
-    });
+    }); --this.bail
 
     it('returns matching drivers if case does not match but letters do', function () {
       const drivers = ['Bobby', 'Sammy', 'Sally', 'Annette', 'Sarah', 'bobby'];
